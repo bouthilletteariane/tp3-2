@@ -1,0 +1,208 @@
+/* Feuille de style principale @Ariane Bouthillette*/
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=Chicle&family=Didact+Gothic&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=News+Cycle:wght@400;700&family=Original+Surfer&family=Playwrite+ES:wght@100..400&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poller+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&family=Spicy+Rice&display=swap');
+@import "normalize.css";
+@import "utilitaires.css";
+:root {
+    --couleur-principale: #ffffff; 
+    --couleur-secondaire:#fffba9;
+  }
+  main { 
+      background-color: var(--couleur-secondaire); 
+  }
+
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Taille des polices */ 
+html {
+ font-size: 62.5%;  
+   /* base décimale */
+}
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+h2 {
+    font-size: 2rem;
+}
+h3{
+    font-size: 2rem;
+}
+p{
+    font-size: 1.0rem;
+}
+legend {
+    font-size: 1.2rem;
+}
+
+label {
+    font-size: 1.9rem;
+}
+li label {
+    font-size:1.2rem;
+}
+@media (min-width: 680px) {
+    h1  {
+        font-size: 6rem;
+    }
+    h2 {
+        font-size: 5rem;
+    }
+    p{
+        font-size: 2.0rem;
+    }
+    legend {
+        font-size: 2.5rem;
+    }
+    
+    label {
+        font-size: .9rem;
+    }
+    li label {
+        font-size:2.2rem;
+    }
+    .label-pays {
+        font-size: 2.2rem;
+    }
+  }
+
+
+/* CSS style*/
+html {
+    padding: 20px;
+    background-color: rgb(210, 253, 135);
+
+}
+fieldset {
+    border-color: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+.choix__format {
+    list-style-type: none;
+    padding: 0;
+}
+.choix__format__li-margin {
+    margin-top: 10px;
+}
+.info__contact {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.info__postale{
+    list-style: none;
+    padding:0;
+}
+
+label {
+    font-size: 1.2em;
+}
+
+.postales__pays option:disabled {
+    font-size: 0.8em; 
+    color: rgb(0, 0, 0); 
+}
+
+.ctnValidation p{
+    margin:0.5rem 0;
+}
+.ctnValidation{
+    margin:1.5rem 0;
+}
+/*Sizing */
+
+
+.submit-button {
+    padding:10px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    font-size:30px;
+    
+    
+}
+.texte__newsletter {
+    font-size: 1.7rem;
+    text-align: center;
+}
+.largeur-100 {
+    width: 100%;
+    height: 30px;
+  }
+  .largeur-50 {
+    width: 48%;
+    height: 30px;
+  }
+  .largeur-30 {
+    width: 30%;
+    height: 30px;
+  }
+  .largeur-20 {
+    width:15%;
+    height: 30px;
+  }
+  .largeur-autre {
+    height:30px ;
+  }
+
+  
+
+  /* Display*/
+
+.choix__format {
+    display: flex;
+    justify-content: space-around; 
+   
+
+}
+.choix__format li {
+    /* display: flex; */
+    justify-content: space-around;
+    max-width: 80px;
+    
+}
+.choix__format label {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    cursor: pointer ;
+}
+
+.choix__format label picture {
+    display: flex;
+    justify-content: center;
+}
+.choix__format label img {
+    width:80%;
+    height: auto;
+}
+
+
+[type=radio]:focus+label {
+    background-color: rgb(255, 255, 255);
+}
+[type=radio]:hover+label img {
+
+    transform:scale(1.05);
+}
+
+[type=radio]:checked+label picture{
+    border:4px dotted rgb(0, 0, 0);
+}
+span {
+    padding:10px;
+}
+.format_grandeur {
+   justify-content: space-around;
+   width: 20%;
+}
+.format_grandeur-imprime {
+    width: 20%;
+}
+
+
+
+
